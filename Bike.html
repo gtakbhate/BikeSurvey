@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Bike</title>
+
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Responsive and mobile friendly stuff -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="html5reset.css" media="all">
+    <link rel="stylesheet" href="responsivegridsystem.css" media="all">
+    <link rel="stylesheet" href="col.css" media="all">
+    <link rel="stylesheet" href="2cols.css" media="all">
+    <link rel="stylesheet" href="3cols.css" media="all">
+    <link rel="stylesheet" href="styleHCC.css" media="all">
+
+
+    <style type="text/css">
+        * {
+            /*-webkit-touch-callout: none;
+            -webkit-user-select: none;*/
+            /* Disable selection/copy in UIWebView */
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        input:focus::-webkit-input-placeholder {
+            color: transparent !important;
+        }
+
+        input:focus::-moz-placeholder {
+            color: transparent !important;
+        }
+
+        input:focus:-moz-placeholder {
+            color: transparent !important;
+        }
+
+        textarea:focus::-webkit-input-placeholder {
+            color: transparent !important;
+        }
+
+        textarea:focus::-moz-placeholder {
+            color: transparent !important;
+        }
+
+        textarea:focus:-moz-placeholder {
+            color: transparent !important;
+        }
+    </style>
+
+    <!-- Responsive Stylesheets -->
+    <link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="1024.css">
+    <link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="768.css">
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="480.css">
+    <link rel="stylesheet" media="only screen and (min-width: 992px)" href="1024.css" />
+
+    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+    <script src="modernizr-2.5.3-min.js"></script>
+    <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+
+    <script type="text/javascript" src="Improtant_fucntions.js"></script>
+<script type="text/javascript">
+function getselection() {
+    
+            var ele = document.getElementsByName('CH9'); 
+              
+            for(i = 0; i < ele.length; i++) { 
+                if(ele[i].checked) 
+                {
+                    if(ele[i].value=="Yes")
+                    {
+                        document.getElementById('CH10').checked=true;
+                    }
+                    else{
+                         document.getElementById('CH10').checked=false;
+                    }
+                }
+            } 
+        
+}
+</script>
+</head>
+
+<body onload="displayonclick('CH11','bikedetails'); displayonclick('CH5','CH6')" >
+    <!--onload="DisplaySection('[@All]');"-->
+
+    <div id="HeaderSection" style="display: block;position:fixed;top:0;width:100%;z-index:999">
+        <div class="section group" style=" width: 100%; background-color:  rgb(12, 66, 114);">
+            <!-- position: fixed;height: 100%;-->
+
+            <div class="col span_3_of_3" style="margin:0">
+                <table style="width: 100%; height: 100%;margin-top:10px">
+                    <tr style="height: 100%">
+                        <td style="width: 15%; height: 100%; text-align: center; vertical-align: middle">
+                            <a style="width: 100%; height: 100%; text-align: center; vertical-align: middle; font-size: large; color: white" onclick="navigateback();">BACK
+                            </a>
+                        </td>
+                        <td class="labeltext_QuestionTitle" style="color: white; vertical-align: top; margin-top: 5px; font-size:large">Bike information
+                        </td>
+                        <td style="width: 15%; height: 100%; text-align: center; vertical-align: middle">
+                            <a style="width: 100%; height: 100%; text-align: center; vertical-align: middle; font-size: large; color: white" onclick="navigatenext();">NEXT
+                            </a>
+                        </td>
+
+                    </tr>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="BodySection" style="display: block; margin-top:55px">
+
+
+        <div id="maincontentcontainer">
+            <div id="maincontent">
+                <!-- style="padding-top:85px;" padding-bottom:70px-->
+                <div class="section group" style="text-align: left">
+                    <!--<div class="col span_2_of_2" style="-moz-border-radius: 5px 5px 5px 5px; -webkit-border-radius: 5px 5px 5px 5px; border-radius: 5px 5px 5px 5px; font-weight: bold; border: 2px solid rgb(41,166,224); -moz-box-shadow: 3px 3px 10px rgb(41,166,224); -webkit-box-shadow: 3px 3px 10px rgb(41,166,224); box-shadow: 3px 3px 10px rgb(41,166,224);">-->
+                    <div class="col span_2_of_2" style="-moz-border-radius: 5px 5px 5px 5px; -webkit-border-radius: 5px 5px 5px 5px; border-radius: 5px 5px 5px 5px; font-weight: bold; border: 2px solid rgb(68,114,148); -moz-box-shadow: 3px 3px 10px rgb(68,114,148); -webkit-box-shadow: 3px 3px 10px rgb(68,114,148); box-shadow: 3px 3px 10px rgb(68,114,148);">
+                        <br>                     
+                            <div class="col span_2_of_2">
+                                <label class="labeltext_Question" style="padding-left: 1%; padding-right: 1%; width: auto">Do you own a bike?</label>
+                            </div>
+                            <div class="section group">
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="checkbox" name="CH11" id="CH11" onclick="displayonclick('CH11','bikedetails')" value="Yes, I own a bike." />
+                                        <label class="labeltext" for="CH11" style="padding-left: 30px">Yes, I own a bike.</label>
+                                    </div>
+                                </div>                                
+                            </div>
+                    <div id="bikedetails" style="display:none">
+                    <div style="width: 100%; text-align: center">
+                            <img src="partition.PNG" style="max-width: 90%" />
+                        </div>
+                            <div class="col span_2_of_2">
+                                <label class="labeltext_Question" style="padding-left: 1%; padding-right: 1%; width: auto">What do you most frequently use your bike for?</label>
+                            </div>
+
+                            <div class="section group">
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="checkbox" name="CH1" id="CH1" value="Commuting" />
+                                        <label class="labeltext" for="CH1" style="padding-left: 30px">Commuting</label>
+                                    </div>
+                                </div>
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="checkbox" name="CH2" id="CH2" value="Leisure" />
+                                        <label class="labeltext" for="CH2" style="padding-left: 30px">Leisure</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section group">
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="checkbox" name="CH3" id="CH3" value="Sport" />
+                                        <label class="labeltext" for="CH3" style="padding-left: 30px">Sport</label>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="checkbox" name="CH4" id="CH4" value="Long distance travel (50+ km)" />
+                                        <label class="labeltext" for="CH4" style="padding-left: 30px">Long distance travel (50+ km)</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="section group">
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="checkbox" onclick="displayonclick('CH5','CH6')" name="CH5" id="CH5" value="Other usage" />
+                                        <label class="labeltext" for="CH5" style="padding-left: 30px">Other usage</label>
+                                        <input style="display:none" type="Text" name="CH6" id="CH6" value="" placeholder="Other reason." />
+                                    </div>
+
+                                </div>
+                                <!--<div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                       
+                                        
+                                    </div>
+                                </div>-->
+                            </div>
+                            <div style="width: 100%; text-align: center">
+                            <img src="partition.PNG" style="max-width: 90%" />
+                        </div>
+
+                            
+                            <div class="col span_2_of_2">
+                                <label class="labeltext_Question" style="padding-left: 1%; padding-right: 1%; width: auto">How far do you typically travel in one day?</label>
+                            </div>
+
+                            <div class="section group">
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="radio" name="CH7" id="CH7" value="Less than 5 km" />
+                                        <label class="labeltext" for="CH7" style="padding-left: 30px">Less than 5 km</label>
+                                    </div>
+                                </div>
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="radio" name="CH7" id="CH7_1" value="6-10 km" />
+                                        <label class="labeltext" for="CH7_1" style="padding-left: 30px">6-10 km</label>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="section group">
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="radio" name="CH7" id="CH7_2" value="11-20 km" />
+                                        <label class="labeltext" for="CH7_2" style="padding-left: 30px">11-20 km</label>
+                                    </div>
+                                </div>
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="radio" name="CH7" id="CH7_3" value="More than 20 km" />
+                                        <label class="labeltext" for="CH7_3" style="padding-left: 30px">More than 20 km</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width: 100%; text-align: center">
+                            <img src="partition.PNG" style="max-width: 90%" />
+                        </div>
+                           
+                            <div class="col span_2_of_2">
+                                <label class="labeltext_Question" style="padding-left: 1%; padding-right: 1%; width: auto">Do you share your bike with anyone?</label>
+                            </div>
+
+                            <div class="section group">
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="radio" name="CH8" id="CH8" value="Yes" />
+                                        <label class="labeltext" for="CH8" style="padding-left: 30px">Yes</label>
+                                    </div>
+                                </div>
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="radio" name="CH8" id="CH8_1" value="No" />
+                                        <label class="labeltext" for="CH8_1" style="padding-left: 30px">No</label>
+                                    </div>
+                                </div>
+                            </div>
+</div>
+<div style="width: 100%; text-align: center">
+                            <img src="partition.PNG" style="max-width: 90%" />
+                        </div>
+                             <div class="col span_2_of_2">
+                                <label class="labeltext_Question" style="padding-left: 1%; padding-right: 1%; width: auto">Are you interested in buying an eBike?</label>
+                            </div>
+
+                            <div class="section group">
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="radio" onclick="getselection()" name="CH9" id="CH9" value="Yes" />
+                                        <label class="labeltext" for="CH9" style="padding-left: 30px">Yes</label>
+                                    </div>
+                                </div>
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="radio" onclick="getselection()" name="CH9" id="CH9_1" value="No" />
+                                        <label class="labeltext" for="CH9_1" style="padding-left: 30px">No</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section group" style="display:none">
+                                <div class="col span_1_of_2">
+                                    <div style="margin-left: 3%">
+                                        <input type="checkbox" name="CH10" id="CH10" value="Interested" />
+                                        <label class="labeltext" for="CH10" style="padding-left: 30px">Interested</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--<div id="FooterSection" style="display: none">
+        <div class="section group" style="position: fixed; width: 100%; height: 100%; background-color: rgb(12, 66, 114);">
+          
+            <div class="col span_3_of_3">
+
+                <table style="width: 100%; height: 100%">
+                    <tr style="height: 100%">
+                        <td style="width: 85%; height: 100%; text-align: center; vertical-align: middle">
+                            <div style="float: left; padding-left: 1%; vertical-align: top;">
+                                <a style="vertical-align: middle" onclick="navigate();">
+                                    <img src="LeadView_UserImg.png" alt="LEAD:" style="float: left; max-height: 100%; max-width: 100%" />&nbsp;<label class="labeltext_QuestionTitle" style="vertical-align: middle; float: left; color: white">John&nbsp;Peterson</label></a>
+                            </div>
+                        </td>
+
+                        <td style="width: 15%; height: 100%; text-align: center; vertical-align: middle">
+                            <a style="width: 100%; height: 100%; text-align: center; vertical-align: middle; font-size: large; color: white" onclick="navigatedone();">DONE
+                            </a>
+                        </td>
+
+                    </tr>
+                </table>
+
+
+            </div>
+        </div>
+    </div>-->
+
+</body>
+
+</html>

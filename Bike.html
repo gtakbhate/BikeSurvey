@@ -13,7 +13,7 @@
     <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Bike</title>
+    <title>Bike Develop</title>
 
     <meta http-equiv="cleartype" content="on">
 
@@ -38,27 +38,27 @@
             /* Disable selection/copy in UIWebView */
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
-
+        
         input:focus::-webkit-input-placeholder {
             color: transparent !important;
         }
-
+        
         input:focus::-moz-placeholder {
             color: transparent !important;
         }
-
+        
         input:focus:-moz-placeholder {
             color: transparent !important;
         }
-
+        
         textarea:focus::-webkit-input-placeholder {
             color: transparent !important;
         }
-
+        
         textarea:focus::-moz-placeholder {
             color: transparent !important;
         }
-
+        
         textarea:focus:-moz-placeholder {
             color: transparent !important;
         }
@@ -75,29 +75,26 @@
     <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
 
     <script type="text/javascript" src="Improtant_fucntions.js"></script>
-<script type="text/javascript">
-function getselection() {
-    
-            var ele = document.getElementsByName('CH9'); 
-              
-            for(i = 0; i < ele.length; i++) { 
-                if(ele[i].checked) 
-                {
-                    if(ele[i].value=="Yes")
-                    {
-                        document.getElementById('CH10').checked=true;
-                    }
-                    else{
-                         document.getElementById('CH10').checked=false;
+    <script type="text/javascript">
+        function getselection() {
+
+            var ele = document.getElementsByName('CH9');
+
+            for (i = 0; i < ele.length; i++) {
+                if (ele[i].checked) {
+                    if (ele[i].value == "Yes") {
+                        document.getElementById('CH10').checked = true;
+                    } else {
+                        document.getElementById('CH10').checked = false;
                     }
                 }
-            } 
-        
-}
-</script>
+            }
+
+        }
+    </script>
 </head>
 
-<body onload="displayonclick('CH11','bikedetails'); displayonclick('CH5','CH6')" >
+<body onload="displayonclick('CH11','bikedetails'); displayonclick('CH5','CH6')">
     <!--onload="DisplaySection('[@All]');"-->
 
     <div id="HeaderSection" style="display: block;position:fixed;top:0;width:100%;z-index:999">
@@ -135,22 +132,22 @@ function getselection() {
                 <div class="section group" style="text-align: left">
                     <!--<div class="col span_2_of_2" style="-moz-border-radius: 5px 5px 5px 5px; -webkit-border-radius: 5px 5px 5px 5px; border-radius: 5px 5px 5px 5px; font-weight: bold; border: 2px solid rgb(41,166,224); -moz-box-shadow: 3px 3px 10px rgb(41,166,224); -webkit-box-shadow: 3px 3px 10px rgb(41,166,224); box-shadow: 3px 3px 10px rgb(41,166,224);">-->
                     <div class="col span_2_of_2" style="-moz-border-radius: 5px 5px 5px 5px; -webkit-border-radius: 5px 5px 5px 5px; border-radius: 5px 5px 5px 5px; font-weight: bold; border: 2px solid rgb(68,114,148); -moz-box-shadow: 3px 3px 10px rgb(68,114,148); -webkit-box-shadow: 3px 3px 10px rgb(68,114,148); box-shadow: 3px 3px 10px rgb(68,114,148);">
-                        <br>                     
-                            <div class="col span_2_of_2">
-                                <label class="labeltext_Question" style="padding-left: 1%; padding-right: 1%; width: auto">Do you own a bike?</label>
-                            </div>
-                            <div class="section group">
-                                <div class="col span_1_of_2">
-                                    <div style="margin-left: 3%">
-                                        <input type="checkbox" name="CH11" id="CH11" onclick="displayonclick('CH11','bikedetails')" value="Yes, I own a bike." />
-                                        <label class="labeltext" for="CH11" style="padding-left: 30px">Yes, I own a bike.</label>
-                                    </div>
-                                </div>                                
-                            </div>
-                    <div id="bikedetails" style="display:none">
-                    <div style="width: 100%; text-align: center">
-                            <img src="partition.PNG" style="max-width: 90%" />
+                        <br>
+                        <div class="col span_2_of_2">
+                            <label class="labeltext_Question" style="padding-left: 1%; padding-right: 1%; width: auto">Do you own a bike?</label>
                         </div>
+                        <div class="section group">
+                            <div class="col span_1_of_2">
+                                <div style="margin-left: 3%">
+                                    <input type="checkbox" name="CH11" id="CH11" onclick="displayonclick('CH11','bikedetails')" value="Yes, I own a bike." />
+                                    <label class="labeltext" for="CH11" style="padding-left: 30px">Yes, I own a bike.</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bikedetails" style="display:none">
+                            <div style="width: 100%; text-align: center">
+                                <img src="partition.PNG" style="max-width: 90%" />
+                            </div>
                             <div class="col span_2_of_2">
                                 <label class="labeltext_Question" style="padding-left: 1%; padding-right: 1%; width: auto">What do you most frequently use your bike for?</label>
                             </div>
@@ -188,7 +185,7 @@ function getselection() {
                                 </div>
                             </div>
 
-                             <div class="section group">
+                            <div class="section group">
                                 <div class="col span_1_of_2">
                                     <div style="margin-left: 3%">
                                         <input type="checkbox" onclick="displayonclick('CH5','CH6')" name="CH5" id="CH5" value="Other usage" />
@@ -205,10 +202,10 @@ function getselection() {
                                 </div>-->
                             </div>
                             <div style="width: 100%; text-align: center">
-                            <img src="partition.PNG" style="max-width: 90%" />
-                        </div>
+                                <img src="partition.PNG" style="max-width: 90%" />
+                            </div>
 
-                            
+
                             <div class="col span_2_of_2">
                                 <label class="labeltext_Question" style="padding-left: 1%; padding-right: 1%; width: auto">How far do you typically travel in one day?</label>
                             </div>
@@ -227,7 +224,7 @@ function getselection() {
                                     </div>
                                 </div>
                             </div>
-                             <div class="section group">
+                            <div class="section group">
                                 <div class="col span_1_of_2">
                                     <div style="margin-left: 3%">
                                         <input type="radio" name="CH7" id="CH7_2" value="11-20 km" />
@@ -242,9 +239,9 @@ function getselection() {
                                 </div>
                             </div>
                             <div style="width: 100%; text-align: center">
-                            <img src="partition.PNG" style="max-width: 90%" />
-                        </div>
-                           
+                                <img src="partition.PNG" style="max-width: 90%" />
+                            </div>
+
                             <div class="col span_2_of_2">
                                 <label class="labeltext_Question" style="padding-left: 1%; padding-right: 1%; width: auto">Do you share your bike with anyone?</label>
                             </div>
@@ -263,47 +260,47 @@ function getselection() {
                                     </div>
                                 </div>
                             </div>
-</div>
-<div style="width: 100%; text-align: center">
+                        </div>
+                        <div style="width: 100%; text-align: center">
                             <img src="partition.PNG" style="max-width: 90%" />
                         </div>
-                             <div class="col span_2_of_2">
-                                <label class="labeltext_Question" style="padding-left: 1%; padding-right: 1%; width: auto">Are you interested in buying an eBike?</label>
-                            </div>
-
-                            <div class="section group">
-                                <div class="col span_1_of_2">
-                                    <div style="margin-left: 3%">
-                                        <input type="radio" onclick="getselection()" name="CH9" id="CH9" value="Yes" />
-                                        <label class="labeltext" for="CH9" style="padding-left: 30px">Yes</label>
-                                    </div>
-                                </div>
-                                <div class="col span_1_of_2">
-                                    <div style="margin-left: 3%">
-                                        <input type="radio" onclick="getselection()" name="CH9" id="CH9_1" value="No" />
-                                        <label class="labeltext" for="CH9_1" style="padding-left: 30px">No</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="section group" style="display:none">
-                                <div class="col span_1_of_2">
-                                    <div style="margin-left: 3%">
-                                        <input type="checkbox" name="CH10" id="CH10" value="Interested" />
-                                        <label class="labeltext" for="CH10" style="padding-left: 30px">Interested</label>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <br>
-                            <br>
+                        <div class="col span_2_of_2">
+                            <label class="labeltext_Question" style="padding-left: 1%; padding-right: 1%; width: auto">Are you interested in buying an eBike?</label>
                         </div>
-                    </div>
 
+                        <div class="section group">
+                            <div class="col span_1_of_2">
+                                <div style="margin-left: 3%">
+                                    <input type="radio" onclick="getselection()" name="CH9" id="CH9" value="Yes" />
+                                    <label class="labeltext" for="CH9" style="padding-left: 30px">Yes</label>
+                                </div>
+                            </div>
+                            <div class="col span_1_of_2">
+                                <div style="margin-left: 3%">
+                                    <input type="radio" onclick="getselection()" name="CH9" id="CH9_1" value="No" />
+                                    <label class="labeltext" for="CH9_1" style="padding-left: 30px">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section group" style="display:none">
+                            <div class="col span_1_of_2">
+                                <div style="margin-left: 3%">
+                                    <input type="checkbox" name="CH10" id="CH10" value="Interested" />
+                                    <label class="labeltext" for="CH10" style="padding-left: 30px">Interested</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <br>
+                        <br>
+                    </div>
                 </div>
 
             </div>
+
         </div>
+    </div>
     </div>
     <!--<div id="FooterSection" style="display: none">
         <div class="section group" style="position: fixed; width: 100%; height: 100%; background-color: rgb(12, 66, 114);">
